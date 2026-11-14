@@ -1,9 +1,13 @@
-Rata-rata perjalanannya meningkat menjadi 96 perjalanan per hari, dibandingkan 73 perjalanan per hari pada 2024 atau naik 31,5 persen. Layanan tersebut didukung 70 kereta dengan 455 gerbong penumpang dan kapasitas total 14.595 kursi.
+**MADINAH** — Kereta Cepat Haramain mengangkut sekitar 8,53 juta penumpang sepanjang 2025, menurut Buletin Ekonomi ke-69 Kamar Dagang Madinah Al-Munawwarah yang merujuk laporan Saudi Press Agency (SPA). Rata-rata perjalanan harian naik 31,5 persen menjadi 96 perjalanan, dibandingkan 73 perjalanan per hari pada 2024.
 
-Stasiun Madinah sendiri mencatat sekitar 6,04 juta pergerakan penumpang datang dan berangkat selama 2025. Angka ini naik 48 persen dibandingkan sekitar 4,09 juta pada 2023, dengan rata-rata sekitar 16.600 penumpang per hari.
+Layanan itu didukung 70 kereta dengan 455 gerbong penumpang dan kapasitas total 14.595 kursi. Jalur kereta yang menghubungkan Makkah dan Madinah melalui Jeddah dan Bandara Internasional King Abdulaziz tersebut membentang 453 kilometer dengan kecepatan operasional hingga 300 kilometer per jam, menurut PEP.
 
-Pertumbuhan tersebut menunjukkan semakin besarnya peran kereta cepat dalam menghubungkan perjalanan jemaah dan pengunjung di wilayah barat Arab Saudi. Laporan Kamar Dagang Madinah juga menyoroti peluang pengembangan layanan shuttle menuju hotel dan kawasan pusat, koneksi ke bandara, serta paket umrah dan ziarah yang lebih terintegrasi.
+**Stasiun Madinah**
 
-Data operasional 2025; laporan diterbitkan 31 Oktober 2026.
+Stasiun Madinah mencatat sekitar 6,04 juta pergerakan penumpang datang dan berangkat pada 2025, naik 48 persen dari sekitar 4,09 juta pada 2023, atau rata-rata sekitar 16.600 penumpang per hari. Angka itu setara 35,4 persen dari seluruh pergerakan penumpang di semua stasiun.
 
-Catatan: visual dalam carousel merupakan rekonstruksi editorial.
+**Peluang investasi**
+
+Kamar Dagang menilai pertumbuhan lalu lintas kereta membuka peluang investasi di sektor transportasi, pariwisata, perhotelan, perdagangan, dan logistik di Madinah. Buletin tersebut menyoroti pengembangan layanan shuttle menuju hotel dan kawasan pusat, koneksi bandara, serta paket umrah dan ziarah yang lebih terintegrasi. Permintaan puncak bulanan layanan shuttle disebut sekitar 739.000 penumpang.
+
+Data di atas merupakan data operasional 2025; buletin diterbitkan pada akhir Oktober 2026. Perlu dibedakan dari data perusahaan Saudi Arabia Railways (SAR) secara keseluruhan, yang mencatat lebih dari 14 juta penumpang di seluruh jaringan pada 2025.

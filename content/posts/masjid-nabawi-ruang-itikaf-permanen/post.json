@@ -1,11 +1,25 @@
 {
  "slug": "masjid-nabawi-ruang-itikaf-permanen",
- "title": "Masjid Nabawi Siapkan Ruang I'tikaf Permanen?",
- "deck": "Laporan dari Madinah menyebut tenda i'tikaf akan diganti ruang permanen. Pembangunan terlihat, rincian resminya masih ditunggu.",
+ "title": "Laporan Lapangan: Masjid Nabawi Diduga Siapkan Ruang I'tikaf Permanen, Pengumuman Resmi Belum Ada",
+ "deck": "Aktivitas konstruksi terlihat di lokasi, tetapi rincian lokasi, desain, kapasitas, dan jadwal belum dikonfirmasi otoritas.",
  "category": "Haramain",
  "date": "2026-10-28",
  "slides": 7,
  "video": true,
- "sources": [],
- "source_note": "Sumber: HMPUH, The Islamic Information, dan SPA (sebagaimana tercantum pada carousel)."
+ "sources": [
+  {
+   "label": "HMPUH (sebagaimana dirujuk pada carousel MIQAT)"
+  },
+  {
+   "label": "The Islamic Information (laporan lapangan)"
+  },
+  {
+   "label": "Saudi Press Agency"
+  },
+  {
+   "label": "Arab News, 9 Maret 2026: 18,000 personnel mobilized in Makkah, Madinah as itikaf begins",
+   "url": "https://www.arabnews.pk/node/2635820"
+  }
+ ],
+ "source_note": "Redaksi MIQAT menyusun berita ini dari laporan lapangan dan rujukan carousel; belum ada pengumuman resmi. Pembaruan 14 November 2026."
 }
