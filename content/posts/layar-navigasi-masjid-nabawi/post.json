@@ -1,15 +1,28 @@
 {
  "slug": "layar-navigasi-masjid-nabawi",
- "title": "Masjid Nabawi dilengkapi 274 papan petunjuk dan 106 layar elektronik yang menampilkan status pintu",
- "deck": "Jemaah dapat mengetahui pintu yang lebih lengang sebelum memilih jalur masuk.",
+ "title": "Masjid Nabawi Pasang Lebih dari 270 Papan Petunjuk dan 100 Layar Elektronik untuk Atur Arus Jemaah",
+ "deck": "Layar menampilkan status pintu secara langsung agar jemaah dapat memilih jalur masuk yang lebih lengang.",
  "category": "Haramain",
  "date": "2026-11-01",
  "slides": 7,
  "video": true,
  "sources": [
   {
-   "label": "Saudi Press Agency"
+   "label": "Bernama-SPA, 31 Okt 2026: Over 370 signs and screens streamline crowd flow at Prophet's Mosque",
+   "url": "https://bernama.com/en/news.php?id=2628283"
+  },
+  {
+   "label": "Okaz: sistem petunjuk terpadu di Masjid Nabawi",
+   "url": "https://www.okaz.com.sa/local/na/2273295"
+  },
+  {
+   "label": "Bernama-SPA: peta interaktif Dua Masjid Suci (950 titik minat)",
+   "url": "https://bernama.com/en/world/news.php?id=2621896"
+  },
+  {
+   "label": "Bernama-SPA, 26 Jan 2026: Smart Engineering Control Centre di Masjid Nabawi",
+   "url": "https://bernama.com/en/news.php?id=2516742"
   }
  ],
- "source_note": "Visual dalam carousel merupakan rekonstruksi editorial. Bukan dokumentasi resmi layar di lokasi. Pembaruan 1 November 2026."
+ "source_note": "Redaksi MIQAT menyusun berita ini dari Bernama-SPA dan Okaz. Judul Bernama menyebut \"370\", sedangkan isi menyebut 270 papan dan 100 layar; redaksi memakai rincian isi. Pembaruan 14 November 2026."
 }
