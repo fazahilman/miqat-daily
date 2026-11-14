@@ -81,6 +81,7 @@ function layout({ title, desc, body, active = '/', og }) {
 
 const catTag = p => `<a class="tag" href="/topik/${p.catSlug}/">${esc(p.category)}</a>`;
 const meta = p => `<span>${fmtDate(p.date)}</span><span>${p.mins} menit baca</span>`;
+const vcard = p => `<figure class="vcard"><video controls preload="none" poster="/${p.slug}/poster.jpg" playsinline><source src="/${p.slug}/video.mp4" type="video/mp4"></video><figcaption><span class="tag">${esc(p.category)}</span><a href="/${p.slug}/">${esc(p.title)}</a><small>${shortDate(p.date)} · 30 detik</small></figcaption></figure>`;
 const row = p => `<article class="row"><a class="rimg" href="/${p.slug}/" tabindex="-1" aria-hidden="true"><img src="/${p.slug}/slide-1.jpg" alt="" loading="lazy"></a><div class="rbody"><div class="rowtop">${catTag(p)}</div><h3><a href="/${p.slug}/">${esc(p.title)}</a></h3><div class="meta">${meta(p)}${p.video ? '<span class="vid">Video</span>' : ''}</div></div></article>`;
 const thumb = p => `<figure class="th"><a href="/${p.slug}/"><img src="/${p.slug}/slide-1.jpg" alt="Sampul carousel: ${esc(p.title)}" loading="lazy"></a><figcaption><span class="tag">${esc(p.category)}</span><a href="/${p.slug}/">${esc(p.title)}</a><small>${p.slides} slide · ${shortDate(p.date)}</small></figcaption></figure>`;
 const secHead = (label, title, more) => `<div class="sh"><div><span class="lab">${label}</span><h2>${title}</h2></div>${more ? `<a class="more" href="${more}">Selengkapnya →</a>` : ''}</div>`;
@@ -103,7 +104,7 @@ add('index.html', layout({
   </section></div>
   <section class="wrap sec">${secHead('Berita', 'Berita terbaru', '/berita/')}<div class="rows">${posts.slice(0, 8).map(row).join('')}</div></section>
   <section class="wrap sec">${secHead('Carousel', 'Carousel terbaru', '/carousel/')}<div class="thgrid">${posts.slice(0, 4).map(thumb).join('')}</div></section>
-  ${vids.length ? `<section class="wrap sec">${secHead('Video', 'Video infografis', '/video/')}${videoBlock(vids[0])}</section>` : ''}
+  ${vids.length ? `<section class="wrap sec">${secHead('Video', 'Video infografis', '/video/')}<div class="vstrip" tabindex="0">${vids.map(vcard).join('')}</div></section>` : ''}
   <section class="wrap sec">${secHead('Rubrik', 'Jelajahi rubrik')}<div class="tiles">${cats.map(c => `<a class="tile" href="/topik/${c.slug}/"><b>${esc(c.name)}</b><span>${c.n} tulisan</span></a>`).join('')}</div></section>`
 }));
 
@@ -114,7 +115,7 @@ function videoBlock(p) {
 
 add('berita/index.html', layout({ title: 'Berita', desc: 'Semua berita MIQAT Daily.', active: '/berita/', body: `<section class="wrap sec">${secHead('Berita', 'Semua berita')}<div class="rows">${posts.map(row).join('')}</div></section>` }));
 add('carousel/index.html', layout({ title: 'Carousel', desc: 'Carousel infografis MIQAT Daily.', active: '/carousel/', body: `<section class="wrap sec">${secHead('Carousel', 'Semua carousel')}<div class="thgrid">${posts.map(thumb).join('')}</div></section>` }));
-add('video/index.html', layout({ title: 'Video', desc: 'Video infografis MIQAT Daily.', active: '/video/', body: `<section class="wrap sec">${secHead('Video', 'Semua video')}${vids.length ? vids.map(videoBlock).join('') : '<p>Belum ada video.</p>'}</section>` }));
+add('video/index.html', layout({ title: 'Video', desc: 'Video infografis MIQAT Daily.', active: '/video/', body: `<section class="wrap sec">${secHead('Video', 'Semua video')}${vids.length ? `<div class="vgrid">${vids.map(vcard).join('')}</div>` : '<p>Belum ada video.</p>'}</section>` }));
 for (const c of cats) add(`topik/${c.slug}/index.html`, layout({ title: c.name, desc: `Tulisan rubrik ${c.name} di MIQAT Daily.`, body: `<section class="wrap sec">${secHead('Rubrik', esc(c.name))}<div class="rows">${posts.filter(p => p.category === c.name).map(row).join('')}</div></section>` }));
 add('tentang/index.html', layout({ title: 'Tentang', desc: 'Tentang MIQAT Daily.', active: '/tentang/', body: `<section class="wrap sec narrow"><span class="lab">Tentang</span><h1 class="h1s">MIQAT: ${SITE.tagline}</h1>
 <div class="prose"><p>MIQAT Daily adalah media harian tentang haji, umrah, dan Saudi untuk pembaca Indonesia. Setiap hari kami memilih satu topik, memeriksa sumbernya, lalu menyajikannya dalam tiga format: berita lengkap, carousel infografis, dan video pendek.</p>

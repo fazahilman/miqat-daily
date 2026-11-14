@@ -107,3 +107,11 @@ footer ul{list-style:none}footer li{margin-bottom:8px;font-size:15px}footer li a
 .morebtn{display:inline-block;margin:6px 0 4px;padding:10px 20px;border:1.5px solid var(--green);background:#fff;color:var(--green);font:600 15px var(--body,inherit);border-radius:999px;cursor:pointer}
 .morebtn:hover{background:var(--green);color:#fff}
 .more .prose,.more{margin-top:14px}
+
+.vstrip{display:flex;gap:16px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory}
+.vcard{flex:0 0 min(220px,62vw);scroll-snap-align:start;margin:0}
+.vcard video{width:100%;max-width:none;aspect-ratio:9/16;object-fit:cover;border-radius:6px}
+.vcard figcaption{display:flex;flex-direction:column;gap:6px;align-items:flex-start;margin-top:10px}
+.vcard figcaption a{font-family:var(--display);font-size:16px;font-weight:600;line-height:1.3;text-decoration:none}.vcard figcaption a:hover{text-decoration:underline}
+.vcard small{color:var(--muted);font-size:13px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:26px 18px}.vgrid .vcard{flex:none}
