@@ -125,14 +125,16 @@ add('404.html', layout({ title: 'Halaman tidak ditemukan', desc: '404', body: `<
 for (const p of posts) {
   const showDeck = !p.body.includes(p.deck.slice(0, 50));
   const slides = Array.from({ length: p.slides }, (_, i) => `<figure><img src="/${p.slug}/slide-${i + 1}.jpg" alt="Slide ${i + 1} dari ${p.slides}: ${esc(p.title)}" loading="${i < 2 ? 'eager' : 'lazy'}"><figcaption>${String(i + 1).padStart(2, '0')} / ${String(p.slides).padStart(2, '0')}</figcaption></figure>`).join('');
+  const vidItem = p.video ? `<figure class="vitem"><video controls preload="metadata" poster="/${p.slug}/poster.jpg" playsinline><source src="/${p.slug}/video.mp4" type="video/mp4"></video><figcaption>VIDEO · 30 DETIK</figcaption></figure>` : '';
   const srcs = (p.sources || []).length ? `<ul class="src">${p.sources.map(s => `<li>${s.url ? `<a href="${esc(s.url)}" rel="noopener">${esc(s.label)}</a>` : esc(s.label)}</li>`).join('')}</ul>` : '';
   add(`${p.slug}/index.html`, layout({
     title: p.title, desc: p.deck.slice(0, 200), og: `/${p.slug}/slide-1.jpg`,
     body: `<article class="wrap post"><div class="rowtop">${catTag(p)}</div><h1>${esc(p.title)}</h1><div class="meta big">${meta(p)}</div>
     ${showDeck ? `<p class="sum">${esc(p.deck)}</p>` : ''}
-    <section class="car" aria-label="Carousel"><div class="carhead"><span class="lab">Carousel</span><span class="hint">Geser ke samping</span></div><div class="strip" tabindex="0">${slides}</div></section>
-    <div class="prose">${md(p.body)}</div>
-    ${p.video ? `<section class="pv"><span class="lab">Video</span><video controls preload="metadata" poster="/${p.slug}/poster.jpg" playsinline><source src="/${p.slug}/video.mp4" type="video/mp4"></video></section>` : ''}
+    <section class="car" aria-label="Video dan carousel"><div class="carhead"><span class="lab">${p.video ? 'Video &amp; Carousel' : 'Carousel'}</span><span class="hint">Geser ke samping</span></div><div class="strip" tabindex="0">${vidItem}${slides}</div></section>
+    <div class="prose more" id="more">${md(p.body)}</div>
+    <button class="morebtn" id="morebtn" type="button" hidden aria-expanded="false" aria-controls="more">Selengkapnya</button>
+    <script>(function(){var m=document.getElementById('more'),b=document.getElementById('morebtn');if(!m||!b)return;if(m.scrollHeight<=300)return;m.classList.add('clamp');b.hidden=false;b.addEventListener('click',function(){var o=m.classList.toggle('clamp');b.textContent=o?'Selengkapnya':'Tutup';b.setAttribute('aria-expanded',String(!o));});})();</script>
     <section class="srcbox"><h2>Sumber</h2>${srcs}${p.source_note ? `<p class="note">${esc(p.source_note)}</p>` : ''}<p class="note">Pembaruan ${fmtDate(p.date)}. MIQAT: ${SITE.tagline}.</p></section>
     <p><a class="back" href="/">← Kembali ke beranda</a></p></article>`
   }));

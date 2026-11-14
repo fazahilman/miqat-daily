@@ -97,3 +97,13 @@ footer ul{list-style:none}footer li{margin-bottom:8px;font-size:15px}footer li a
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 
 .hero .lead{grid-area:lead}.hero .alsolist{grid-area:also}.hero .cover{grid-area:cover}
+
+/* video + carousel dalam satu strip */
+.strip{align-items:flex-start}
+.strip figure{flex:0 0 min(300px,72vw)}
+.strip .vitem{flex:0 0 min(225px,56vw)}
+.strip .vitem video{width:100%;max-width:none;aspect-ratio:9/16;border-radius:4px;object-fit:cover;box-shadow:0 10px 24px -16px rgba(11,61,46,.3)}
+.more.clamp{max-height:300px;overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
+.morebtn{display:inline-block;margin:6px 0 4px;padding:10px 20px;border:1.5px solid var(--green);background:#fff;color:var(--green);font:600 15px var(--body,inherit);border-radius:999px;cursor:pointer}
+.morebtn:hover{background:var(--green);color:#fff}
+.more .prose,.more{margin-top:14px}
