@@ -97,7 +97,8 @@ add('index.html', layout({
     <div class="lead"><div class="rowtop">${catTag(lead)}<span class="lab2">Berita utama</span></div>
       <h1><a href="/${lead.slug}/">${esc(lead.title)}</a></h1><p class="deck">${esc(lead.deck)}</p>
       <div class="meta">${meta(lead)}</div><a class="btn" href="/${lead.slug}/">Baca selengkapnya →</a>
-      <ul class="alsolist">${rest.slice(0, 4).map(p => `<li><a href="/${p.slug}/"><span class="tag s">${esc(p.category)}</span>${esc(p.title)}</a></li>`).join('')}</ul></div>
+      </div>
+    <ul class="alsolist">${rest.slice(0, 4).map(p => `<li><a href="/${p.slug}/"><span class="tag s">${esc(p.category)}</span>${esc(p.title)}</a></li>`).join('')}</ul>
     <a class="cover" href="/${lead.slug}/"><img src="/${lead.slug}/slide-1.jpg" alt="Sampul: ${esc(lead.title)}"></a>
   </section></div>
   <section class="wrap sec">${secHead('Berita', 'Berita terbaru', '/berita/')}<div class="rows">${posts.slice(0, 8).map(row).join('')}</div></section>

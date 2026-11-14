@@ -28,7 +28,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.15;text-wrap:b
 .btn{display:inline-block;margin-top:22px;background:var(--green);color:var(--cream);text-decoration:none;font-weight:700;padding:12px 20px;border-radius:4px;font-size:15px}
 .btn:hover{background:var(--green2)}.btn.ghost{background:transparent;color:var(--green);border:2px solid var(--green)}
 /* hero */
-.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:44px;align-items:start;padding-top:42px;padding-bottom:42px}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;grid-template-areas:'lead cover' 'also cover';grid-template-rows:auto 1fr;column-gap:44px;row-gap:0;align-items:start;padding-top:42px;padding-bottom:42px}
 .rowtop{display:flex;align-items:center;gap:12px}
 .hero h1{font-size:clamp(30px,4.2vw,48px);margin:14px 0 14px}.hero h1 a{text-decoration:none}.hero h1 a:hover{text-decoration:underline}
 .deck{font-size:19px;color:var(--muted);max-width:60ch}
@@ -85,6 +85,8 @@ footer h4{color:var(--gold);font-size:12px;letter-spacing:.18em;text-transform:u
 footer ul{list-style:none}footer li{margin-bottom:8px;font-size:15px}footer li a{text-decoration:none}footer li a:hover{text-decoration:underline}
 .copy{margin-top:28px;padding-top:16px;padding-bottom:24px;border-top:1px solid rgba(221,182,113,.35);font-size:13px;color:var(--gold)}
 @media (max-width:520px){.row{grid-template-columns:96px 1fr;gap:14px}.rimg img{width:96px;height:96px}}
-@media (max-width:900px){.hero,.rows,.vblock,.fgrid{grid-template-columns:1fr}.thgrid{grid-template-columns:1fr 1fr}.cover{max-width:360px}.rows{gap:0}}
+@media (max-width:900px){.hero{grid-template-columns:1fr;grid-template-areas:'lead' 'cover' 'also'}.hero .cover{margin:24px 0 4px}.hero .alsolist{margin-top:22px}.hero,.rows,.vblock,.fgrid{grid-template-columns:1fr}.thgrid{grid-template-columns:1fr 1fr}.cover{max-width:360px}.rows{gap:0}}
 @media (max-width:520px){.thgrid{grid-template-columns:1fr}.brand img{width:150px}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+.hero .lead{grid-area:lead}.hero .alsolist{grid-area:also}.hero .cover{grid-area:cover}
