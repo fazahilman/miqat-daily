@@ -1,11 +1,22 @@
 {
  "slug": "ufuq-data-haji-umrah",
- "title": "Saudi meluncurkan UFUQ, sebuah sistem yang dirancang untuk mengubah data sektor haji dan umrah menjadi pengetahuan yang dapat digunakan dalam pengambilan keputusan",
- "deck": "UFUQ memuat lebih dari 100 laporan tahunan, lebih dari 15 dashboard informasi, dan lebih dari 15 set data terbuka. Produk pengetahuan tersebut ditujukan untuk mendukung lebih dari 55 lembaga pemerintah dan pemangku kepentingan yang terlibat dalam pelayanan jemaah.",
+ "title": "Arab Saudi Luncurkan UFUQ, Sistem Data untuk Dasar Pengambilan Keputusan di Sektor Haji dan Umrah",
+ "deck": "Sistem yang diluncurkan di Konferensi dan Pameran Haji ke-6 di Jeddah ini memuat lebih dari 100 laporan tahunan, lebih dari 15 dashboard, dan lebih dari 15 set data terbuka.",
  "category": "Saudi Update",
  "date": "2026-11-14",
  "slides": 6,
  "video": true,
- "sources": [],
- "source_note": "Pilgrim Experience Program; Arab News; Al Hadath; Detik Hikmah."
+ "sources": [
+  {
+   "label": "Arab News, 11 November 2026: Saudi Arabia launches Ufuq to support Hajj and Umrah decision-making",
+   "url": "https://www.arabnews.pk/saudi-arabia/saudi-arabia-launches-ufuq-to-support-hajj-and-umrah-decision-making-3006748"
+  },
+  {
+   "label": "Pilgrim Experience Program (PEP)"
+  },
+  {
+   "label": "Detik Hikmah"
+  }
+ ],
+ "source_note": "Redaksi MIQAT menyusun berita ini dari laporan Arab News dan keterangan PEP. Pembaruan 14 November 2026."
 }
