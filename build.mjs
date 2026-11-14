@@ -2,6 +2,7 @@
 // Cara pakai: node build.mjs  ->  hasil di dist/
 import fs from 'node:fs';
 import path from 'node:path';
+import zlib from 'node:zlib';
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const POSTS_DIR = path.join(ROOT, 'content/posts');
@@ -13,6 +14,20 @@ const MONTHS = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 
 const fmtDate = iso => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${MONTHS[m - 1]} ${y}`; };
 const shortDate = iso => { const [, m, d] = iso.split('-').map(Number); return `${d} ${MONTHS[m - 1].slice(0, 3)}`; };
 const slugify = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+// ---------- zip (store, tanpa dependensi) ----------
+function makeZip(entries) {
+  const parts = [], cen = []; let off = 0;
+  for (const [name, data] of entries) {
+    const nb = Buffer.from(name), crc = zlib.crc32(data) >>> 0;
+    const lh = Buffer.alloc(30); lh.writeUInt32LE(0x04034b50, 0); lh.writeUInt16LE(20, 4); lh.writeUInt16LE(0x0800, 6); lh.writeUInt32LE(crc, 14); lh.writeUInt32LE(data.length, 18); lh.writeUInt32LE(data.length, 22); lh.writeUInt16LE(nb.length, 26);
+    parts.push(lh, nb, data);
+    const ch = Buffer.alloc(46); ch.writeUInt32LE(0x02014b50, 0); ch.writeUInt16LE(20, 4); ch.writeUInt16LE(20, 6); ch.writeUInt16LE(0x0800, 8); ch.writeUInt32LE(crc, 16); ch.writeUInt32LE(data.length, 20); ch.writeUInt32LE(data.length, 24); ch.writeUInt16LE(nb.length, 28); ch.writeUInt32LE(off, 42);
+    cen.push(ch, nb); off += 30 + nb.length + data.length;
+  }
+  const cd = Buffer.concat(cen), end = Buffer.alloc(22); end.writeUInt32LE(0x06054b50, 0); end.writeUInt16LE(entries.length, 8); end.writeUInt16LE(entries.length, 10); end.writeUInt32LE(cd.length, 12); end.writeUInt32LE(off, 16);
+  return Buffer.concat([...parts, cd, end]);
+}
 
 // ---------- markdown mini ----------
 const inline = t => esc(t)
@@ -125,7 +140,7 @@ add('404.html', layout({ title: 'Halaman tidak ditemukan', desc: '404', body: `<
 
 for (const p of posts) {
   const showDeck = !p.body.includes(p.deck.slice(0, 50));
-  const slides = Array.from({ length: p.slides }, (_, i) => `<figure><img src="/${p.slug}/slide-${i + 1}.jpg" alt="Slide ${i + 1} dari ${p.slides}: ${esc(p.title)}" loading="${i < 2 ? 'eager' : 'lazy'}"><figcaption>${String(i + 1).padStart(2, '0')} / ${String(p.slides).padStart(2, '0')}</figcaption></figure>`).join('');
+  const slides = Array.from({ length: p.slides }, (_, i) => `<figure><img src="/${p.slug}/slide-${i + 1}.jpg" alt="Slide ${i + 1} dari ${p.slides}: ${esc(p.title)}" loading="${i < 2 ? 'eager' : 'lazy'}"><figcaption>${String(i + 1).padStart(2, '0')} / ${String(p.slides).padStart(2, '0')} · <a href="/${p.slug}/${fs.existsSync(path.join(p.dir, `hd-${i + 1}.jpg`)) ? `hd-${i + 1}.jpg` : `slide-${i + 1}.jpg`}" download="miqat-${p.slug}-${String(i + 1).padStart(2, '0')}.jpg">Unduh</a></figcaption></figure>`).join('');
   const vidItem = p.video ? `<figure class="vitem"><video controls preload="metadata" poster="/${p.slug}/poster.jpg" playsinline><source src="/${p.slug}/video.mp4" type="video/mp4"></video><figcaption>VIDEO · 30 DETIK</figcaption></figure>` : '';
   const srcs = (p.sources || []).length ? `<ul class="src">${p.sources.map(s => `<li>${s.url ? `<a href="${esc(s.url)}" rel="noopener">${esc(s.label)}</a>` : esc(s.label)}</li>`).join('')}</ul>` : '';
   add(`${p.slug}/index.html`, layout({
@@ -133,6 +148,7 @@ for (const p of posts) {
     body: `<article class="wrap post"><div class="rowtop">${catTag(p)}</div><h1>${esc(p.title)}</h1><div class="meta big">${meta(p)}</div>
     ${showDeck ? `<p class="sum">${esc(p.deck)}</p>` : ''}
     <section class="car" aria-label="Video dan carousel"><div class="carhead"><span class="lab">${p.video ? 'Video &amp; Carousel' : 'Carousel'}</span><span class="hint">Geser ke samping</span></div><div class="strip" tabindex="0">${vidItem}${slides}</div></section>
+    <div class="dl" aria-label="Unduh untuk media sosial"><a class="btn" href="/${p.slug}/carousel.zip" download="miqat-${p.slug}-carousel.zip">Unduh carousel (ZIP, ${p.slides} slide)</a>${p.video ? `<a class="btn" href="/${p.slug}/video.mp4" download="miqat-${p.slug}-video.mp4">Unduh video (MP4)</a>` : ''}</div>
     <div class="prose more" id="more">${md(p.body)}</div>
     <button class="morebtn" id="morebtn" type="button" hidden aria-expanded="false" aria-controls="more">Selengkapnya</button>
     <script>(function(){var m=document.getElementById('more'),b=document.getElementById('morebtn');if(!m||!b)return;if(m.scrollHeight<=300)return;m.classList.add('clamp');b.hidden=false;b.addEventListener('click',function(){var o=m.classList.toggle('clamp');b.textContent=o?'Selengkapnya':'Tutup';b.setAttribute('aria-expanded',String(!o));});})();</script>
@@ -147,6 +163,11 @@ for (const [p, html] of pages) { const f = path.join(DIST, p); fs.mkdirSync(path
 fs.mkdirSync(path.join(DIST, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'assets/style.css'), path.join(DIST, 'assets/style.css'));
 fs.copyFileSync(path.join(ROOT, 'assets/logo.png'), path.join(DIST, 'assets/logo.png'));
+for (const p of posts) {
+  const ents = [];
+  for (let i = 1; i <= p.slides; i++) { const hd = path.join(p.dir, `hd-${i}.jpg`), sd = path.join(p.dir, `slide-${i}.jpg`); const f = fs.existsSync(hd) ? hd : sd; if (fs.existsSync(f)) ents.push([`miqat-${p.slug}-${String(i).padStart(2, '0')}.jpg`, fs.readFileSync(f)]); }
+  fs.mkdirSync(path.join(DIST, p.slug), { recursive: true }); fs.writeFileSync(path.join(DIST, p.slug, 'carousel.zip'), makeZip(ents));
+}
 for (const p of posts) for (const f of fs.readdirSync(p.dir)) if (/\.(jpg|png|mp4)$/.test(f)) { fs.mkdirSync(path.join(DIST, p.slug), { recursive: true }); fs.copyFileSync(path.join(p.dir, f), path.join(DIST, p.slug, f)); }
 fs.writeFileSync(path.join(DIST, 'sitemap.txt'), posts.map(p => `/${p.slug}/`).join('\n') + '\n');
 console.log(`OK: ${posts.length} tulisan, ${pages.length} halaman -> dist/`);
