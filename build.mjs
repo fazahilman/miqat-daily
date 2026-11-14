@@ -81,7 +81,7 @@ function layout({ title, desc, body, active = '/', og }) {
 
 const catTag = p => `<a class="tag" href="/topik/${p.catSlug}/">${esc(p.category)}</a>`;
 const meta = p => `<span>${fmtDate(p.date)}</span><span>${p.mins} menit baca</span>`;
-const row = p => `<article class="row"><div class="rowtop">${catTag(p)}</div><h3><a href="/${p.slug}/">${esc(p.title)}</a></h3><div class="meta">${meta(p)}${p.video ? '<span class="vid">Video</span>' : ''}</div></article>`;
+const row = p => `<article class="row"><a class="rimg" href="/${p.slug}/" tabindex="-1" aria-hidden="true"><img src="/${p.slug}/slide-1.jpg" alt="" loading="lazy"></a><div class="rbody"><div class="rowtop">${catTag(p)}</div><h3><a href="/${p.slug}/">${esc(p.title)}</a></h3><div class="meta">${meta(p)}${p.video ? '<span class="vid">Video</span>' : ''}</div></div></article>`;
 const thumb = p => `<figure class="th"><a href="/${p.slug}/"><img src="/${p.slug}/slide-1.jpg" alt="Sampul carousel: ${esc(p.title)}" loading="lazy"></a><figcaption><span class="tag">${esc(p.category)}</span><a href="/${p.slug}/">${esc(p.title)}</a><small>${p.slides} slide · ${shortDate(p.date)}</small></figcaption></figure>`;
 const secHead = (label, title, more) => `<div class="sh"><div><span class="lab">${label}</span><h2>${title}</h2></div>${more ? `<a class="more" href="${more}">Selengkapnya →</a>` : ''}</div>`;
 
@@ -93,13 +93,13 @@ const [lead, ...rest] = posts;
 const vids = posts.filter(p => p.video);
 add('index.html', layout({
   title: SITE.name, desc: 'Berita, carousel, dan video seputar haji, umrah, dan Saudi. MIQAT: Melihat Saudi Lebih Dekat.', og: lead && `/${lead.slug}/slide-1.jpg`,
-  body: `<section class="wrap hero">
+  body: `<div class="herobg" style="--bg:url('/${lead.slug}/slide-1.jpg')"><section class="wrap hero">
     <div class="lead"><div class="rowtop">${catTag(lead)}<span class="lab2">Berita utama</span></div>
       <h1><a href="/${lead.slug}/">${esc(lead.title)}</a></h1><p class="deck">${esc(lead.deck)}</p>
       <div class="meta">${meta(lead)}</div><a class="btn" href="/${lead.slug}/">Baca selengkapnya →</a>
       <ul class="alsolist">${rest.slice(0, 4).map(p => `<li><a href="/${p.slug}/"><span class="tag s">${esc(p.category)}</span>${esc(p.title)}</a></li>`).join('')}</ul></div>
     <a class="cover" href="/${lead.slug}/"><img src="/${lead.slug}/slide-1.jpg" alt="Sampul: ${esc(lead.title)}"></a>
-  </section>
+  </section></div>
   <section class="wrap sec">${secHead('Berita', 'Berita terbaru', '/berita/')}<div class="rows">${posts.slice(0, 8).map(row).join('')}</div></section>
   <section class="wrap sec">${secHead('Carousel', 'Carousel terbaru', '/carousel/')}<div class="thgrid">${posts.slice(0, 4).map(thumb).join('')}</div></section>
   ${vids.length ? `<section class="wrap sec">${secHead('Video', 'Video infografis', '/video/')}${videoBlock(vids[0])}</section>` : ''}
