@@ -93,7 +93,7 @@ const [lead, ...rest] = posts;
 const vids = posts.filter(p => p.video);
 add('index.html', layout({
   title: SITE.name, desc: 'Berita, carousel, dan video seputar haji, umrah, dan Saudi. MIQAT: Melihat Saudi Lebih Dekat.', og: lead && `/${lead.slug}/slide-1.jpg`,
-  body: `<div class="herobg" style="--bg:url('/${lead.slug}/slide-1.jpg')"><section class="wrap hero">
+  body: `<div class="herobg" style="--bg:url('/${lead.slug}/${fs.existsSync(path.join(lead.dir, 'hero.jpg')) ? 'hero.jpg' : 'slide-1.jpg'}')"><section class="wrap hero">
     <div class="lead"><div class="rowtop">${catTag(lead)}<span class="lab2">Berita utama</span></div>
       <h1><a href="/${lead.slug}/">${esc(lead.title)}</a></h1><p class="deck">${esc(lead.deck)}</p>
       <div class="meta">${meta(lead)}</div><a class="btn" href="/${lead.slug}/">Baca selengkapnya →</a>
