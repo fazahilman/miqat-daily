@@ -1,16 +1,15 @@
-## Angka utama
+**MAKKAH** — Komisi Kerajaan untuk Kota Makkah dan Tempat-Tempat Suci (RCMC) mengumumkan rampungnya perluasan Jalan Lingkar Ketiga dan membukanya untuk lalu lintas. Menurut TradeArabia dan Gulf News, jarak dari Simpang Pangeran Miteb (Mutib) ke Masjidil Haram kini 6,5 km dari sebelumnya 16,5 km, sedangkan jarak ke fasilitas Jamarat di Mina menjadi 4 km dari 12 km.
 
-- Menuju Masjidil Haram: 16,5 km menjadi 6,5 km, 10 kilometer lebih pendek atau sekitar 60% lebih dekat.
-- Menuju Jamarat, Mina: 12 km menjadi 4 km, 8 kilometer lebih pendek atau sekitar 67%.
-- Kapasitas jalan: 170.000 kendaraan per hari.
+Komisi menyebut jalan ini mampu menampung hingga 170.000 kendaraan per hari di kedua arah, dan memangkas waktu tempuh ke Masjidil Haram dan Jamarat hingga sekitar 90 persen. Ruas baru ini melengkapi bagian barat jalan, membentang dari Simpang Pangeran Miteb ke Simpang Masjidil Haram melalui Simpang Pangeran Sultan, dan melayani langsung kawasan Al-Mursalat dan Al-Aziziyah, menurut Saudi Life Guide yang mengutip data Komisi.
 
-Angka ini khusus untuk perjalanan dari Simpang Pangeran Muteb, bukan semua rute di Makkah. Jalur ini merupakan salah satu dari empat jalan lingkar Makkah.
+**Cara membaca angka**
 
-## Siapa yang terbantu
+Selisih jarak 10 km (ke Masjidil Haram, sekitar 60 persen lebih pendek) dan 8 km (ke Jamarat, sekitar 67 persen) berlaku hanya untuk perjalanan dari Simpang Pangeran Miteb, bukan semua rute di Makkah. Klaim "hingga 90 persen" adalah indikator dampak proyek menurut Komisi; waktu nyata bergantung titik berangkat, kepadatan, dan pengaturan lalu lintas.
 
-- Warga dan pengunjung Al-Mursalat
-- Warga dan pengunjung Al-Aziziyah
-- Jemaah menuju Haram dan Mina
-- Arus kendaraan saat periode padat
+**Latar proyek**
 
-Perluasan ini memperkuat jaringan jalan Makkah. Dampak nyata pada waktu perjalanan tetap bergantung pada titik keberangkatan, kepadatan, dan pengaturan lalu lintas.
+Jalan Lingkar Ketiga adalah satu dari empat jalan lingkar Makkah. Pada 26 September, Komisi membuka tambahan ruas 1,5 km pada koridor yang sama serta sisa Jalan Pangeran Saud Al Faisal, menurut Asharq Al-Awsat dan Arab News. Pengerjaan jalan ini telah berlangsung lebih dari satu dekade, kata Arab News. Komisi belum menyebut apakah ruas lain akan dibuka tahun ini.
+
+**Bagi jemaah**
+
+Ikuti rambu di Simpang Pangeran Miteb dan Pangeran Sultan; tata lajur di persimpangan baru kerap berubah pada pekan-pekan awal. Konfirmasikan rute bus dan jadwal dengan penyelenggara perjalanan.
