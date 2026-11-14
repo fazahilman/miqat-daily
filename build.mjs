@@ -124,7 +124,7 @@ add('404.html', layout({ title: 'Halaman tidak ditemukan', desc: '404', body: `<
 for (const p of posts) {
   const showDeck = !p.body.includes(p.deck.slice(0, 50));
   const slides = Array.from({ length: p.slides }, (_, i) => `<figure><img src="/${p.slug}/slide-${i + 1}.jpg" alt="Slide ${i + 1} dari ${p.slides}: ${esc(p.title)}" loading="${i < 2 ? 'eager' : 'lazy'}"><figcaption>${String(i + 1).padStart(2, '0')} / ${String(p.slides).padStart(2, '0')}</figcaption></figure>`).join('');
-  const srcs = (p.sources || []).length ? `<ul class="src">${p.sources.map(s => `<li><a href="${esc(s.url)}" rel="noopener">${esc(s.label)}</a></li>`).join('')}</ul>` : '';
+  const srcs = (p.sources || []).length ? `<ul class="src">${p.sources.map(s => `<li>${s.url ? `<a href="${esc(s.url)}" rel="noopener">${esc(s.label)}</a>` : esc(s.label)}</li>`).join('')}</ul>` : '';
   add(`${p.slug}/index.html`, layout({
     title: p.title, desc: p.deck.slice(0, 200), og: `/${p.slug}/slide-1.jpg`,
     body: `<article class="wrap post"><div class="rowtop">${catTag(p)}</div><h1>${esc(p.title)}</h1><div class="meta big">${meta(p)}</div>
