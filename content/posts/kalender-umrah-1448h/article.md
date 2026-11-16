@@ -1,6 +1,6 @@
 **JEDDAH** — Kementerian Haji dan Umrah Arab Saudi sudah menetapkan kalender resmi musim umrah 1448 H. Bagi calon jemaah yang menyiapkan umrah Ramadan atau awal 2027, tiga tanggal perlu dicatat: visa umrah terakhir diterbitkan 9 Maret 2027, jemaah terakhir boleh masuk 23 Maret 2027, dan semua jemaah harus sudah pulang paling lambat 7 April 2027.
 
-**Tiga tenggat musim umrah 1448 H**
+**Tiga tanggal wajib musim umrah 1448 H**
 
 Menurut halaman resmi kementerian di haj.gov.sa, kalender musim ini berjalan sebagai berikut:
 
@@ -14,7 +14,7 @@ Kementerian juga mengimbau perusahaan umrah dan agen luar negeri untuk mematuhi 
 
 **Apa artinya bagi calon jemaah**
 
-Pemegang visa tidak otomatis aman jika berangkat mepet. Visa harus terbit sebelum 9 Maret 2027, dan pemegangnya harus masuk sebelum 23 Maret 2027. Karena batas pulang jatuh pada 7 April 2027, rencana perjalanan, tiket pulang, dan hotel perlu dihitung mundur dari tanggal itu. Calon jemaah yang berencana umrah saat Ramadan sebaiknya memastikan travel sudah mengurus visa jauh sebelum tenggat, bukan di hari-hari terakhir.
+Pemegang visa tidak otomatis aman jika berangkat mepet. Visa harus terbit sebelum 9 Maret 2027, dan pemegangnya harus masuk sebelum 23 Maret 2027. Karena batas pulang jatuh pada 7 April 2027, rencana perjalanan, tiket pulang, dan hotel perlu dihitung mundur dari tanggal itu. Calon jemaah yang berencana umrah saat Ramadan sebaiknya memastikan travel sudah mengurus visa jauh sebelum batas akhir, bukan di hari-hari terakhir.
 
 Pastikan juga travel yang dipilih berizin PPIU. Pada awal November 2026, Kemenhaj menyelidiki dua penyelenggara umrah setelah 105 orang rombongan asal Pasaman Barat gagal berangkat, sehingga pengecekan legalitas travel tetap penting.
 
