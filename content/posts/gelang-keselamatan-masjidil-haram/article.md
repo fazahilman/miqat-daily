@@ -22,4 +22,4 @@ Banyak jemaah umrah dan haji datang bersama orang tua atau lansia, dan kerumunan
 
 **Catatan redaksi**
 
-Bernama menyebut layanan ini gratis, tetapi Arab News tidak membahas biaya. Tata cara pendaftaran dan syarat bukti disabilitas tidak dijelaskan di kedua sumber, jadi jemaah disarankan bertanya langsung ke Pusat Layanan Tamu di lokasi. Bernama menyajikan layanan ini seolah baru diperkenalkan, sementara Arab News mencatat peluncuran awalnya pada Juli 2025; redaksi memakai keterangan Arab News yang lebih rinci. Tidak ada angka jumlah pengguna dalam laporan mana pun.
+Bernama menyebut layanan ini gratis, tetapi Arab News tidak membahas biaya. Tata cara pendaftaran dan syarat bukti disabilitas tidak dijelaskan di kedua sumber, jadi jemaah disarankan bertanya langsung ke Pusat Layanan Tamu di lokasi. Bernama menyajikan layanan ini seolah baru diperkenalkan, sementara Arab News mencatat peluncuran awalnya pada Juli 2025; redaksi memakai keterangan Arab News yang lebih rinci. Tidak ada angka jumlah pengguna dalam laporan mana pun. Foto sampul adalah ilustrasi suasana kerumunan jemaah di halaman Masjidil Haram, bukan gambar pengguna layanan ini.
