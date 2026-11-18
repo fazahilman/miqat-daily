@@ -23,4 +23,4 @@ Raudhah adalah salah satu tujuan utama jemaah di Madinah, dan pembagian waktu me
 
 **Catatan redaksi**
 
-Redaksi membaca rilis SPA dari ringkasan halamannya, bukan salinan lengkap, sehingga ketentuan rinci seperti kuota atau batas usia belum dapat dipastikan. Jadwal dapat berubah, termasuk selama musim haji dan Ramadan; periksa Nusuk dan pengumuman otoritas Masjid Nabawi sebelum berangkat. HIMPUH dan The Islamic Information bukan sumber resmi.
+Redaksi membaca rilis SPA dari ringkasan halamannya, bukan salinan lengkap, sehingga ketentuan rinci seperti kuota atau batas usia belum dapat dipastikan. Jadwal dapat berubah, termasuk selama musim haji dan Ramadan; periksa Nusuk dan pengumuman otoritas Masjid Nabawi sebelum berangkat. HIMPUH dan The Islamic Information bukan sumber resmi. Foto carousel: Rushdi Fatani (Pexels) dan Ryan Pradipta Putra (Unsplash), dipakai sebagai ilustrasi suasana Masjid Nabawi.
