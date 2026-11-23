@@ -1,5 +1,15 @@
 **JAKARTA** — Sejumlah maskapai internasional masih membatasi atau membatalkan penerbangan ke kota-kota Arab Saudi karena situasi keamanan di Timur Tengah. Menurut detikHikmah (22/11/2026) yang mengutip CNBC Indonesia, pembatasan itu diperkirakan berlaku hingga akhir 2026, dan sebagian hingga 2027. Bandara King Khalid Riyadh dibuka bertahap sejak Oktober 2026.
 
+**Penyebabnya: dampak konflik di kawasan**
+
+Pembatasan ini terkait situasi keamanan di Timur Tengah, bukan kebijakan Indonesia atau Arab Saudi terhadap jemaah. Laporan detikHikmah menyebut maskapai membatasi rute karena kondisi keamanan akibat konflik di kawasan. Artikel MIQAT 14 November mencatat laporan Siasat yang mengaitkan penangguhan dengan serangan terhadap penerbangan dan infrastruktur Saudi.
+
+**Bagaimana kaitannya dengan jemaah dari Indonesia?**
+
+Daftar ini bukan daftar rute dari Indonesia. Isinya maskapai asing, terutama rute dari Eropa, Amerika, Asia Selatan, dan Teluk menuju kota-kota Saudi, dan sebagian besar ke Riyadh dan Dammam. Maskapai Indonesia dan rute langsung Jakarta ke Jeddah atau Madinah tidak ada di dalamnya. Jembatannya ada pada jemaah yang berangkat dengan transit: pada 26 Oktober, Kemenhaj memperkirakan sekitar 70 ribu jemaah umrah Indonesia memakai rute transit di Malaysia dan Singapura. Jemaah yang transit lewat maskapai atau bandara terdampak bisa kena perubahan jadwal, sehingga Kemenhaj mengimbau penerbangan langsung.
+
+Untuk rute langsung Jakarta, redaksi belum menemukan pengumuman penundaan resmi. Halaman jadwal Saudia Indonesia (diperbarui 20/11/2026) masih mencantumkan penerbangan Jakarta–Jeddah dan Jakarta–Madinah tanpa pemberitahuan pembatalan. Jadwal itu bisa berubah, dan status Garuda Indonesia serta Lion Air belum dapat dipastikan redaksi.
+
 **Yang sudah kembali, tapi belum normal**
 
 Menurut daftar tersebut, Emirates melayani Dubai–Jeddah dan Dubai–Madinah, sementara Riyadh dan Dammam masih dihentikan. flydubai kembali melayani Riyadh, Dammam, dan Abha. Qatar Airways melanjutkan Riyadh, Dammam, dan Jeddah dengan frekuensi yang belum normal. Oman Air membuka kembali Riyadh, Dammam, dan Jeddah dengan frekuensi terbatas. PIA tetap melayani Jeddah dari Lahore, Islamabad, dan Karachi, tetapi menghentikan Riyadh.
@@ -17,7 +27,7 @@ Beberapa tanggal pada daftar ini, misalnya Air India untuk Jeddah hingga 21 Nove
 
 **Yang perlu dibaca dengan tepat**
 
-Daftar ini bersumber dari satu laporan media dan belum diverifikasi ke pengumuman masing-masing maskapai. Tanggal penangguhan sering bergeser. Daftar ini juga tidak memuat Garuda Indonesia, Lion Air, atau Saudia. Sebagian besar maskapai di atas melayani rute Riyadh, bukan Jeddah dan Madinah yang menjadi tujuan utama jemaah umrah.
+Daftar ini bersumber dari satu laporan media dan belum diverifikasi ke pengumuman masing-masing maskapai. Tanggal penangguhan sering bergeser. Sebagian besar maskapai di atas melayani rute Riyadh, bukan Jeddah dan Madinah yang menjadi tujuan utama jemaah umrah.
 
 **Arahan pemerintah Indonesia**
 
