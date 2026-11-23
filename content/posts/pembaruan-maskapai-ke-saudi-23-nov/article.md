@@ -26,3 +26,7 @@ Pada 26 Oktober 2026, Kementerian Haji dan Umrah RI mengimbau jemaah dan penyele
 **Apa yang bisa dilakukan jemaah**
 
 Pastikan jadwal dan status penerbangan lewat PPIU sebelum berangkat, pantau arahan Kemenhaj, KBRI Riyadh, KJRI Jeddah, dan Kemlu, dan jangan memutuskan berdasarkan kabar yang belum terverifikasi. Bila rute transit berubah, minta penjelasan tertulis dari penyelenggara.
+
+**Catatan redaksi**
+
+Foto cover: Jake Nackos (Unsplash). Foto ilustrasi, bukan dokumentasi penerbangan tertentu.
