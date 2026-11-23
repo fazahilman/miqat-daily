@@ -1,6 +1,6 @@
 # Naskah video: Pembaruan maskapai ke Saudi (23 Nov 2026)
 
-Durasi sekitar 50 detik, 9:16. Narasi (VO) dibacakan suara sintetis offline (espeak-ng), bisa diganti rekaman suara asli.
+Durasi sekitar 40 detik, 9:16. Narasi (VO) memakai rekaman suara Mas Hil (file Maaskappai.wav), dipotong per adegan mengikuti jeda bicara.
 
 **1. Pembuka** (mulai 0 dtk)
 Update penerbangan ke Saudi. Belasan maskapai asing masih batasi rute.
