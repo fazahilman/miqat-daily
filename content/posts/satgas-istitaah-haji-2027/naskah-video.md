@@ -3,7 +3,7 @@
 Durasi 52 detik, 9:16 (cover awal 3 dtk, VO 45 dtk dimulai di detik ke-3, end card 3,5 dtk). Narasi (VO) memakai rekaman Mas Hil (kemenhaj.wav), timing adegan mengikuti jeda bicara. Satu kalimat per napas, tempo tenang. Angka ditulis dengan huruf. "Istitaah" dibaca "istitho'ah".
 
 **Cover awal** (0 sampai 3 dtk, tanpa narasi)
-Layar judul: "Satgas Istitaah Haji 2027 Dibentuk". Foto gedung Kemenhaj (detikcom), logo MIQAT.
+Layar judul: "Satgas Istitaah Haji 2027 Dibentuk". Ilustrasi garis detak jantung dengan centang (dibuat MIQAT, tanpa foto), logo MIQAT.
 
 **1. Pembuka** (mulai 3 dtk)
 Haji dua ribu dua puluh tujuh. Kemenhaj membentuk Satgas Istitaah Kesehatan di daerah.
@@ -26,7 +26,7 @@ Calon jemaah, periksakan kesehatan sejak dini. Susunan satgas dan tanggal berlak
 **End card** (mulai 48,6 dtk, tanpa narasi)
 MIQAT, Melihat Saudi Lebih Dekat, @miqatdaily.
 
-Sumber: Republika (dari ANTARA), 25/11/2026. Kompas 24/11/2026 hanya dirujuk judulnya. Foto: detikcom (izin pemakaian belum dipastikan).
+Sumber: Republika (dari ANTARA), 25/11/2026. Kompas 24/11/2026 hanya dirujuk judulnya.
 
 ## Catatan produksi
 - Video sudah memakai rekaman VO Mas Hil (volume dinormalisasi). Belum ada backsound.
